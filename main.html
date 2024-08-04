@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootlstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <title>Panda Shop</title>
+  </head>
+  <body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/image_2024-07-29_103048798-removebg-preview.png" alt="Brand Logo" style="max-height: 50px;">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Notification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+  
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="mt-5 fs-3 text-uppercase">Discover the new world</p>
+            <h1 class="display-1 fw-bolder text-capitalize">Iphone 14 plus</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Buy now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">New Offers has arrived</p>
+            <p class="display-1 fw-bolder text-capitalize">Samsung S24</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Buy now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/Xiaomi-14-Ultra-official-featured-image-1-1420x799.webp" class="d-block w-100 c-img" alt="Slide 3">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="text-uppercase fs-3 mt-5">New Products are on</p>
+            <p class="display-1 fw-bolder text-capitalize">Xiaomi 14 ultra</p>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Buy now</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="div-2 row" id="Products">
+  <h2 class="display-2 fw-bolder text-capitalize">Products</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="col">
+    <a href="products-phone.html">
+    <img src="images/Phones20Tablets-01-3944.webp" width="100px" height="100px" alt="" >
+    </a>
+  
+  </div>
+  <div class="col">
+    <a href="products-pc.html">
+    <img src="images/airpods-8799.webp" width="100px" height="100px" alt="">
+    </a>
+  </div>
+  <div class="col">
+    <a href="products-tablet.html">
+    <img src="images/Macbook-01-4687.webp" width="100px" height="100px" alt="">
+    </a>
+  </div>
+  <div class="col">
+    <a href="products-cctv.html">
+    <img src="images/Cable20interconnects-01-4039.webp" width="100px" height="100px" alt="">
+    </a>
+  </div>
+  <div class="col">
+    <a href="products-tv.html">
+    <img src="images/Drone20Camera-01-6999.webp" width="100px" height="100px" alt="">
+    </a>
+  </div>
+  
+</div>
+
+   
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <h2 class="display-2 fw-bolder text-capitalize">Apple Section</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+      
+
+
+
+<div class="container">
+
+
+  
+  <div class="row">
+    
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">
+                            
+                  <img src="images/iphone-15-pro-mx.jpg" class="card-img-top" alt="product1">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Iphone 15 Pro Max</h4>
+                      <p class="card-text">146500৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                      
+                            
+                  <img src="images/iPhone-15-Plus-(2)-7161.jpg" class="card-img-top" alt="product2">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Iphone 15 Plus</h4>
+                      <p class="card-text">111000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                      
+                            
+                  <img src="images/iPhone-14-Pro-Max-9907.jpg" class="card-img-top" alt="product3">
+
+                  <div class="card-body">
+                    
+                      <h4 class="card-title">Iphone 14 Pro Max</h4>
+                      <p class="card-text">141000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                        
+                     
+                  <img src="images/iPhone-14-Plus-Blue-5074.jpg" class="card-img-top" alt="product4">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Iphone 14 Plus</h4>
+                      <p class="card-text">98000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 mb-4">
+        <div class="product-box">
+            <div class="card position-relative">                      
+                          
+                <img src="images/iPhone-14-Pro-Max-9907.jpg" class="card-img-top" alt="product3">
+
+                <div class="card-body">
+                    <h4 class="card-title">Iphone 14 Pro Max</h4>
+                    <p class="card-text">141000৳</p>
+                    <div class="cart-btn">
+                      <button class="buy"> Buy now
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-4 mb-4">
+      <div class="product-box">
+          <div class="card position-relative">                      
+                           
+              <img src="images/iPhone-14-Pro-Max-9907.jpg" class="card-img-top" alt="product3">
+
+              <div class="card-body">
+                  <h4 class="card-title">Iphone 14 Pro Max</h4>
+                  <p class="card-text">141000৳</p>
+                  <div class="cart-btn">
+                    <button class="buy"> Buy now
+                    </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>          
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <div class="row">
+    <h2 class="display-2 fw-bolder text-capitalize">Samsung Section</h2>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="container">
+
+
+  
+  <div class="row">
+    
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">
+                <div class="onsale">
+                  <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+              </div>            
+                  <img src="images/galaxy-s24-ultra-titanium-gray-500x500.webp" class="card-img-top" alt="product1">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Samsung S24 Ultra</h4>
+                      <p class="card-text">109500৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                      
+                <div class="onsale">
+                  <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+              </div>   
+                  <img src="images/galaxy-s23-ultra-cream-500x500.webp" class="card-img-top" alt="product2">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Samsung S23 Ultra</h4>
+                      <p class="card-text">111000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                      
+                  <div class="onsale">
+                      <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+                  </div>                             
+                  <img src="images/galaxy-s22-ultra-green-500x500.webp" class="card-img-top" alt="product3">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Samsung S22 Ultra</h4>
+                      <p class="card-text">141000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-4 mb-4">
+          <div class="product-box">
+              <div class="card position-relative">                        
+                <div class="onsale">
+                  <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+              </div>   
+                  <img src="images/galaxy-z-flip5-mint-500x500.webp" class="card-img-top" alt="product4">
+
+                  <div class="card-body">
+                      <h4 class="card-title">Samsung Flip 5</h4>
+                      <p class="card-text">98000৳</p>
+                      <div class="cart-btn">
+                        <button class="buy"> Buy now
+                        </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 mb-4">
+        <div class="product-box">
+            <div class="card position-relative">                      
+                <div class="onsale">
+                    <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+                </div>                             
+                <img src="images/galaxy-z-fold4-beige-01-500x500.png" class="card-img-top" alt="product3">
+
+                <div class="card-body">
+                    <h4 class="card-title">Samsung Fold 4</h4>
+                    <p class="card-text">141000৳</p>
+                    <div class="cart-btn">
+                      <button class="buy"> Buy now
+                      </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-4 mb-4">
+      <div class="product-box">
+          <div class="card position-relative">                      
+              <div class="onsale">
+                  <span class="badge rounded-0"><i class="fa-solid fa-arrow-down-long"></i> 50%</span>
+              </div>                             
+              <img src="images/galaxy-z-flip4-bora-purple-01-500x500.webp" class="card-img-top" alt="product3">
+
+              <div class="card-body">
+                  <h4 class="card-title">Samsung Flip 4</h4>
+                  <p class="card-text">141000৳</p>
+                  <div class="cart-btn">
+                    <button class="buy"> Buy now
+                    </button>
+                  </div>
+              </div>
+          </div>
+       </div>
+     </div>          
+   </div>
+ </div>
+
+
+
+
+
+
+
+
+
+<div class="product">
+  <h2 class="display-2 fw-bolder text-capitalize">Gadgets</h2>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col">
+        <div class="card h-100">
+            <img src="/images/Apple-Vision-Pro-a-4608.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Apple Vision</h4>
+              <br>
+              <h2 class="card-text" align-text:center>350000৳</h2>
+              <br>
+              <div class="cart-btn">
+                <button class="buy"> Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="images/drone.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">DJI Mavic 3 Fly</h4>
+              <br>
+              <h2 class="card-text" align-text:center>290000৳</h2>
+              <br>
+              <div class="cart-btn">
+                <button class="buy"> Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="images/Silver-5859.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Galaxy Watch6</h4>
+              <br>
+              <h2 class="card-text" align-text:center>21000৳</h2>
+              <br>
+              <div class="cart-btn">
+                <button class="buy"> Buy now
+                </button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <img src="/images/Bose-QuietComfort-Earbuds-II-a-4549.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h4 class="card-title">Bose Airpod</h4>
+            <br>
+            <h2 class="card-text" align-text:center>36000৳</h2>
+            <br>
+            <div class="cart-btn">
+              <button class="buy"> Buy now
+              </button>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <img src="/images/Amazon-Echo-Dot-5th-Gen-2022-Charcoal-4249.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Amazon Echo</h4>
+              <br>
+              <h2 class="card-text" align-text:center>6500৳</h2>
+              <br>
+              <div class="cart-btn">
+                <button class="buy"> Buy now
+                </button>
+              </div>
+        </div>
+      </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+      <img src="/images/Anker-Soundcore-Space-Q45-Blue-5028.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4 class="card-title">Anker Q45</h4>
+            <br>
+            <h2 class="card-text" align-text:center>11300৳</h2>
+            <br>
+            <div class="cart-btn">
+              <button class="buy"> Buy now
+              </button>
+            </div>
+      </div>
+    </div>
+</div>
+<div class="col">
+<div class="card h-100">
+    <img src="/images/4123-8128.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">JBL Flip 6</h4>
+          <br>
+          <h2 class="card-text" align-text:center>11000৳</h2>
+          <br>
+          <div class="cart-btn">
+            <button class="buy"> Buy now
+            </button>
+          </div>
+    </div>
+  </div>
+</div>
+<div class="col">
+<div class="card h-100">
+    <img src="/images/Apple-TV-4K---3rd-Gen-Black-a-4489.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h4 class="card-title">Apple Tv 4k</h4>
+          <br>
+          <h2 class="card-text" align-text:center>24500৳</h2>
+          <br>
+          <div class="cart-btn">
+            <button class="buy"> Buy now
+            </button>
+          </div>
+    </div>
+  </div>
+</div>  
+
+</div>
+
+</div>
+
+
+ 
+
+
+<div class="footer">
+
+
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+
+
+
+      <div>
+        <a href="" class="text-white me-4">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </section>
+
+
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+
+        <div class="row mt-3">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">Panda Shop</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              We always try to give our best 
+            </p>
+          </div>
+
+
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">Our partners</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Apple</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Samsung</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">JBL</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Xiaomi</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Career</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">About us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> 142/3, Baily Road, Dhaka, Bangladesh</p>
+            <p><i class="fas fa-envelope mr-3"></i> mehrabh115@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 01923288018</p>
+            <p><i class="fas fa-print mr-3"></i> 01937031938</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </footer>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
